@@ -1,0 +1,26 @@
+<div>
+	<div class="page-header">
+		<small> Wine List</small>
+	</div>
+
+	<div class="card" ng-repeat="x in wineListJson">
+		<div class="col-md-4 col-sm-1">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img width="100" src="img/user.png" />
+						</div>
+						<div class="col-md-8">
+							<h6>{{x.name}}</h6>
+							<p style="font-size: 12px;">{{x.year}}</p>
+							<p style="font-size: 12px;">{{x.country}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wineListDiv"></div>
+</div>
